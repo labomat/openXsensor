@@ -96,7 +96,7 @@
 // ***** 6.4 - Convert voltage to temperature (° Celcius) *****                    see oXs_config_advanced.h if you want to measure temperature(s) with thermistor
 
 // ***** 6.5 - Current parameters  *****                                           see also oXs_config_advanced.h for additionnal parameters if you want to measure current with a current sensor
-#define ARDUINO_MEASURES_A_CURRENT   NO                                       //   select between YES , NO 
+#define ARDUINO_MEASURES_A_CURRENT   YES                                       //   select between YES , NO 
 
 // ***** 6.6 - Ads1115 parameters  *****                                           see oXs_config_advanced.h for additional parameters when AN_ADS1115_IS_CONNECTED is YES
 #define AN_ADS1115_IS_CONNECTED   NO                 // select between YES , NO
