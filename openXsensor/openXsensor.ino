@@ -703,6 +703,9 @@ void setup(){
   Serial.println(F("End of general set up"));
 #endif
 
+pinMode(7, INPUT);
+
+
 } // ******************** end of Setup *****************************************************
 
 
@@ -985,6 +988,10 @@ void readSensors() {
     }
 #endif
  
+      test1.value = digitalRead(8) ;
+      test1.available = true ;
+
+
 }                  // ************** end of readSensors ********************************************
 
 

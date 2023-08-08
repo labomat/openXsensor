@@ -2,10 +2,10 @@
 #include <avr/pgmspace.h>
 
 #ifdef DEBUG
-//#define DEBUGGPS
+#define DEBUGGPS
 #define DEBUGPARSEGPS
-//#define DEBUGSENDGPS
-//#define DEBUG_FORWARD_GPS_MSG_TO_PC
+#define DEBUGSENDGPS
+#define DEBUG_FORWARD_GPS_MSG_TO_PC
 #endif
 
 //#define DEBUGSIMULATEGPS

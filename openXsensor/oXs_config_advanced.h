@@ -55,7 +55,7 @@
 
 //#define FILL_TEST2_WITH_GPS_HDOP                               // uncomment to activate this option
 
-//#define FILL_TEST_1_2_WITH_LQ                                  // uncomment to activate this option
+#define FILL_TEST_1_2_WITH_LQ                                  // uncomment to activate this option
 
 // --------- 3 - PPM settings ---------
 
@@ -126,7 +126,7 @@
 
 // ***** 6.2 - Voltage parameters *****
 // Each of following lines contains 6 parameters, the first value is for VOLT_1, the second for VOLT_2, ... up to the sixth for VOLT_6 
-#define PIN_VOLTAGE        3  , 4     , 8   , 8    , 8   , 8               //  Fill all 6 values; set to 0 up to 7 for analog pins A0 up to A7 ; set the value to 8 for the voltage(s) not to be measured.
+#define PIN_VOLTAGE        2  , 3     , 8   , 8    , 8   , 8               //  Fill all 6 values; set to 0 up to 7 for analog pins A0 up to A7 ; set the value to 8 for the voltage(s) not to be measured.
 #define RESISTOR_TO_GROUND  820 , 10    , 10  , 10 , 0  , 18               // set value to 0 when no divider is used for a voltage; can contains decimals 
 #define RESISTOR_TO_VOLTAGE 10000 , 8.7 , 22 , 27  , 0 , 47              // set value to 0 when no divider is used for a voltage; can contains decimals 
 #define OFFSET_VOLTAGE      0   , 0     , 0    , 0    , 0   , 0                // optionnal, can be negative, must be integer, in principe in mv
@@ -147,11 +147,11 @@
 //#define B_COEFFICIENT 3950 // B coefficient of NTC
 
 // ***** 6.5 - Current parameters  *****
-#define PIN_CURRENTSENSOR               6  //      Arduino pin used to measure the voltage provided by a current sensor
-#define MVOLT_AT_ZERO_AMP              2500    // in millivolt
-#define MVOLT_PER_AMP                  185      // in milliVolt per Amp
+#define PIN_CURRENTSENSOR               4  //      Arduino pin used to measure the voltage provided by a current sensor
+#define MVOLT_AT_ZERO_AMP              2540   // in millivolt
+#define MVOLT_PER_AMP                  125      // in milliVolt per Amp
 #define RESISTOR_TO_GROUND_FOR_CURRENT  2200   // put as comment or set to 0 if no divider is used (e.g. 19.8 for 1.1 internal ref)
-#define RESISTOR_TO_CURRENT_SENSOR      10000   // put as comment or set to 0 if no divider is used (e.g  39   for 1.1 internal ref)
+#define RESISTOR_TO_CURRENT_SENSOR      11000   // put as comment or set to 0 if no divider is used (e.g  39   for 1.1 internal ref)
 
 // ***** 6.6 - Ads1115 parameters  *****
 //#define ADS_MEASURE A0_TO_A1 ,  ADS_OFF , ADS_OFF , ADS_OFF // select 4 values between A0_TO_A1, A0_TO_A3, A1_TO_A3, A2_TO_A3, A0_TO_GND, A1_TO_GND, A2_TO_GND, A3_TO_GND, ADS_OFF
@@ -230,5 +230,3 @@
 
 
 #endif// End define OXS_CONFIG_ADVANCED_h
-
-
