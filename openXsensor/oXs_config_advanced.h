@@ -148,7 +148,7 @@
 
 // ***** 6.5 - Current parameters  *****
 #define PIN_CURRENTSENSOR               4  //      Arduino pin used to measure the voltage provided by a current sensor
-#define MVOLT_AT_ZERO_AMP              2540   // in millivolt
+#define MVOLT_AT_ZERO_AMP              2600   // in millivolt
 #define MVOLT_PER_AMP                  125      // in milliVolt per Amp
 #define RESISTOR_TO_GROUND_FOR_CURRENT  2200   // put as comment or set to 0 if no divider is used (e.g. 19.8 for 1.1 internal ref)
 #define RESISTOR_TO_CURRENT_SENSOR      11000   // put as comment or set to 0 if no divider is used (e.g  39   for 1.1 internal ref)
